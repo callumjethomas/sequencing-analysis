@@ -2,5 +2,9 @@
 temp/
 
 # ignore log files
-*.log
+logs/
 
+# ignore data files
+rawdata/
+cleandata/
+*.zip
