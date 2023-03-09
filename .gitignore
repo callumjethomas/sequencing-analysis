@@ -3,8 +3,10 @@ temp/
 
 # ignore log files
 logs/
+.out
 
 # ignore data files
 rawdata/
 cleandata/
+assemblies/
 *.zip
