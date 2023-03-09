@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Trim reads using fastp and porechopper, then generate fastqc/multiqc
 # Arguments required:
 	# 1. an accession number
