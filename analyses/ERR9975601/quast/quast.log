@@ -1,0 +1,66 @@
+/mnt/lustre/RDS-live/downing/miniconda3/bin/quast assemblies/ERR9975601/scaffolds.fasta -o analyses/ERR9975601/quast
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-5.4.0-42-generic-x86_64-with-glibc2.29 (linux_64)
+  Python version: 3.8.10
+  CPUs number: 64
+
+Started: 2023-03-09 14:47:01
+
+Logging to /mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/quast/quast.log
+NOTICE: Maximum number of threads is set to 16 (use --threads option to set it manually)
+
+CWD: /mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis
+Main parameters: 
+  MODE: default, threads: 16, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  assemblies/ERR9975601/scaffolds.fasta ==> scaffolds
+
+2023-03-09 14:47:02
+Running Basic statistics processor...
+  Contig files: 
+    scaffolds
+  Calculating N50 and L50...
+    scaffolds, N50 = 3684, L50 = 4, auN = 2901.0, Total length = 28573, GC % = 38.02, # N's per 100 kbp =  342.98
+  Drawing Nx plot...
+    saved to /mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/quast/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/quast/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/quast/basic_stats/GC_content_plot.pdf
+  Drawing scaffolds GC content plot...
+    saved to /mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/quast/basic_stats/scaffolds_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 33x)...
+    saved to /mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/quast/basic_stats/coverage_histogram.pdf
+  Drawing scaffolds coverage histogram (bin size: 33x)...
+    saved to /mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/quast/basic_stats/scaffolds_coverage_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2023-03-09 14:47:03
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2023-03-09 14:47:03
+RESULTS:
+  Text versions of total report are saved to /mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/quast/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/quast/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/quast/report.html
+  PDF version (tables and plots) is saved to /mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/quast/report.pdf
+  Icarus (contig browser) is saved to /mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/quast/icarus.html
+  Log is saved to /mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/quast/quast.log
+
+Finished: 2023-03-09 14:47:03
+Elapsed time: 0:00:02.334850
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
