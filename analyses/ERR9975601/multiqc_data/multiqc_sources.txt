@@ -1,0 +1,7 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	ERR9975601_1	/mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/ERR9975601_1_fastqc.zip
+FastQC	all_sections	ERR9975601_1_trim	/mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/ERR9975601_1_trim_fastqc.zip
+FastQC	all_sections	ERR9975601_2	/mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/ERR9975601_2_fastqc.zip
+FastQC	all_sections	ERR9975601_2_trim	/mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/ERR9975601_2_trim_fastqc.zip
+FastQC	all_sections	ERR9975601	/mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/ERR9975601_fastqc.zip
+FastQC	all_sections	ERR9975601_trim	/mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR9975601/ERR9975601_trim_fastqc.zip

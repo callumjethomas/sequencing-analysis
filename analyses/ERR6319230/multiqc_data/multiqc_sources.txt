@@ -1,0 +1,4 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	ERR6319230	/mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR6319230/ERR6319230_fastqc.zip
+FastQC	all_sections	ERR6319230_trim_chop	/mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR6319230/ERR6319230_trim_chop_fastqc.zip
+FastQC	all_sections	ERR6319230_trim	/mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/ERR6319230/ERR6319230_trim_fastqc.zip
