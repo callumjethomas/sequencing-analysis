@@ -13,13 +13,13 @@ echo "Prefetching files to temporary directory..."
 
 # This allows for faster download than just using fasterq-dump + accession, especially for very large files
 
-prefetch $1 -O ./temp
+/mnt/lustre/RDS-live/downing/sratoolkit.3.0.1-ubuntu64/bin/prefetch $1 -O ./temp
 
 echo "Downloading reads..."
 
 mkdir -p ./rawdata/$1 ./cleandata/$1 ./analyses/$1 ./logs/$1
 
-fasterq-dump ./temp/$1/$1.sra -O ./rawdata/$1 -t ./temp/$1 -f
+/mnt/lustre/RDS-live/downing/sratoolkit.3.0.1-ubuntu64/bin/fasterq-dump ./temp/$1/$1.sra -O ./rawdata/$1 -t ./temp/$1 -f
 
 echo "Download complete."
 

@@ -1,4 +1,6 @@
-# Trim using fastx_tookit
+#!/bin/bash
+
+# Trim reads using fastp and porechopper, then generate fastqc/multiqc
 # Arguments required:
 	# 1. an accession number
 	# 2. minimum Phred score
@@ -36,17 +38,17 @@ echo "Phred score threshold: $2"
 echo "Minimum length: ${3}bp"
 
 # If reads are paired:
-
-if [ -f "./rawdata/${1}/${1}_1.fastq" ] && [ -f "./rawdata/${1}/${1}_2.fastq" ]; then
-	echo "Processing paired reads..."
-	fastp -i ./rawdata/${1}/${1}_1.fastq -I ./rawdata/${1}/${1}_2.fastq -o ./cleandata/${1}/${1}_1_trim.fastq -O ./cleandata/${1}/${1}_2_trim.fastq -q $2 -l $3 -h ./analyses/${1}/${1}_trim.html -p
+#
+#if [ -f "./rawdata/${1}/${1}_1.fastq" ] && [ -f "./rawdata/${1}/${1}_2.fastq" ]; then
+#	echo "Processing paired reads..."
+#	/mnt/lustre/RDS-live/downing/FASTQC/fastp -i ./rawdata/${1}/${1}_1.fastq -I ./rawdata/${1}/${1}_2.fastq -o ./cleandata/${1}/${1}_1_trim.fastq -O ./cleandata/${1}/${1}_2_trim.fastq -q $2 -l $3 -h ./analyses/${1}/${1}_trim.html -p
 
 # Else if reads are single:
 
-else
+#else
 	echo "Processing single reads..."
-	fastp -i ./rawdata/${1}/${1}.fastq -o ./cleandata/${1}/${1}_trim.fastq -q $2 -l $3 -h ./analyses/${1}/${1}_trim.html -p
-fi
+	/mnt/lustre/RDS-live/downing/FASTQC/fastp -i ./rawdata/${1}/${1}.fastq -o ./cleandata/${1}/${1}_trim.fastq -q $2 -l $3 -h ./analyses/${1}/${1}_trim.html -p
+#fi
 
 # Clean up unneeded json file
 
@@ -62,7 +64,7 @@ if [ $4 = "y" ]; then
 
 	for file in $FILES; do
 		echo "Chopping $file..."
-		porechop-runner.py -i $file -o ./cleandata/${1}/$(basename ${file%.*})_chop.fastq --verbosity 1 > ./logs/${1}/$(basename ${file%.*})_chop.txt
+		/mnt/lustre/RDS-live/downing/Porechop/porechop-runner.py -i $file -o ./cleandata/${1}/$(basename ${file%.*})_chop.fastq --verbosity 1 > ./logs/${1}/$(basename ${file%.*})_chop.txt
 		done
 fi
 echo "Nanopore adapter removal complete."
