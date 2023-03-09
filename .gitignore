@@ -3,7 +3,7 @@ temp/
 
 # ignore log files
 logs/
-.out
+*.out
 
 # ignore data files
 rawdata/
