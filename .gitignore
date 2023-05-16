@@ -9,4 +9,6 @@ logs/
 rawdata/
 cleandata/
 assemblies/
+mapping/
+analyses/
 *.zip
