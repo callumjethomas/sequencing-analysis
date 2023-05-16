@@ -1,5 +1,0 @@
-Module	Section	Sample Name	Source
-FastQC	all_sections	SRR21224254_1	/mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/SRR21224254/SRR21224254_1_fastqc.zip
-FastQC	all_sections	SRR21224254_1_trim	/mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/SRR21224254/SRR21224254_1_trim_fastqc.zip
-FastQC	all_sections	SRR21224254_2	/mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/SRR21224254/SRR21224254_2_fastqc.zip
-FastQC	all_sections	SRR21224254_2_trim	/mnt/lustre/RDS-ephemeral/thomas/git_projects/sequencing-analysis/analyses/SRR21224254/SRR21224254_2_trim_fastqc.zip
